@@ -4,11 +4,16 @@ import config
 
 # Establecer la conexión con la base de datos ( connection strig)
 connection = psycopg2.connect(
-    host=config.host,
-    user=config.user,
-    password=config.password,
-    database=config.database,
-    port=config.port
+    #configurar host
+    host=config.host, 
+    #configurar user
+    user=config.user, 
+    #configurar password
+    password=config.password, 
+    #configurar db
+    database=config.database, 
+    #configurar puerto
+    port=config.port 
 )
 
 # Habilitar la confirmación automática de transacciones
